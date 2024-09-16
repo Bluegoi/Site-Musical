@@ -1,0 +1,198 @@
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #0b329c;
+}
+
+header {
+    background-color: #0044ff;
+    color: #fff;
+    padding: 90px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.biografia {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.perfil {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.discografia {
+    background-color: #1b1b1b;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.album-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.album {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.album img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.album:hover img {
+    transform: scale(1.05);
+}
+
+.videos-musicas {
+    background-color: #1b1b1b;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.datas-turne {
+    background-color: #1b1b1b;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.datas-turne ul {
+    list-style-type: none;
+}
+
+.contato {
+    background-color: #1b1b1b;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes-sociais a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.redes-sociais a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .biografia {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .perfil {
+        margin-bottom: 20px;
+    }
+
+    .album-grid {
+        flex-direction: column;
+    }
+}
+
+.videos-musicas {
+    padding: 20px;
+    background-color: #1b1b1b;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video-item {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+}
+
+.video-item iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .video-item {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 900px) {
+    .video-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .video-item {
+        flex: 1 1 100%;
+    }
+}
